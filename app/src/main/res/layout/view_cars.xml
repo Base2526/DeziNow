@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~ *
+  ~ * * Copyright © 2016, Mobilyte Inc. and/or its affiliates. All rights reserved.
+  ~ * *
+  ~ * * Redistribution and use in source and binary forms, with or without
+  ~ * * modification, are permitted provided that the following conditions are met:
+  ~ * *
+  ~ * * - Redistributions of source code must retain the above copyright
+  ~ * *    notice, this list of conditions and the following disclaimer.
+  ~ * *
+  ~ * * - Redistributions in binary form must reproduce the above copyright
+  ~ * * notice, this list of conditions and the following disclaimer in the
+  ~ * * documentation and/or other materials provided with the distribution.
+  ~ *
+  ~ */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_margin_10"
+    android:background="@drawable/btn_selector"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:padding="@dimen/activity_margin_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/def_profile_ultra_small"
+                    android:layout_height="@dimen/def_profile_ultra_small"
+                    android:background="@drawable/circle_bg_white"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/car_img"
+                        android:layout_width="@dimen/def_profile_ultra_small"
+                        android:layout_height="@dimen/def_profile_ultra_small"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/car" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button">
+
+                    <LinearLayout
+                        android:id="@+id/center_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/rightmost_layout"
+                        android:background="@color/btn_bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_margin_10">
+
+                        <TextView
+                            android:id="@+id/car_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/activity_margin_10"
+                            android:text="HONDA CIVIC"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/car_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_marginTop="@dimen/activity_margin_3"
+                            android:text="#5R3434GGD"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rightmost_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/activity_margin_16"
+                        android:layout_marginLeft="@dimen/activity_margin_16"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/def_profile_ultra_small"
+                            android:layout_height="@dimen/def_profile_ultra_small"
+                            android:background="@drawable/circel_bg_green"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_big" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

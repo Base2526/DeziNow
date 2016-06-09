@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/green</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- My Theme -->
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/edittext_bg</item>
+
+    </style>
+
+    <style name="DriverTheme" parent="MyMaterialTheme.Base">
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+    <!-- Theme for ActionBar Toggle -->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/black</item>
+    </style>
+<!-- Text Label Theme-->
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/app_textcolor</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/edittext_bg</item>
+        <item name="colorControlNormal">@color/edittext_bg</item>
+        <item name="colorControlActivated">@color/edittext_bg</item>
+        <item name="colorControlHighlight">@color/edittext_bg</item>
+        <item name="android:colorBackground">@color/edittext_bg</item>
+    </style>
+    <!-- Dialog Theme -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Circular progress bar-->
+    <style name="Widget"/>
+
+    <style name="Widget.ProgressBar.CircularProgressBar" parent="Widget">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="cpb_progressColor">@color/circular_progress_default_progress</item>
+        <item name="cpb_hasShadow">true</item>
+        <item name="cpb_strokeWidth">10</item>
+        <item name="cpb_titleColor">@color/circular_progress_default_title</item>
+        <item name="cpb_subtitleColor">@color/circular_progress_default_subtitle</item>
+    </style>
+
+    <style name="Widget.ProgressBar.Holo.CircularProgressBar" parent="Widget.ProgressBar.CircularProgressBar">
+        <item name="cpb_hasShadow">false</item>
+        <item name="cpb_strokeWidth">5</item>
+    </style>
+</resources>

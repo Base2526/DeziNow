@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/nav_profile"
+            android:title="PROFILE"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_favourite_place"
+            android:icon="@drawable/nav_favorite_places"
+            android:title="FAVOURITE PLACES"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_cars"
+            android:icon="@drawable/nav_car"
+            android:title="YOUR CARS"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/nav_trip_history"
+            android:title="TRIP HISTORY"
+            android:checkable="false"/>
+
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/nav_payment"
+            android:title="PAYMENTS"
+            android:checkable="false"/>
+
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/nav_report"
+            android:title="REPORT AN ISSUE"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_refer_history"
+            android:icon="@drawable/nav_refer_history"
+            android:title="REFER HISTORY"
+            android:checkable="false"/>
+
+        <item
+            android:id="@+id/nav_become_driver"
+            android:icon="@drawable/nav_become_driver"
+            android:title="BECOME A DRIVER"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_about_us"
+            android:title="ABOUT US"
+            android:checkable="false"/>
+
+        <item
+            android:id="@+id/nav_driver_mode"
+            android:icon="@drawable/nav_driver_mode"
+            android:title="DRIVER MODE"
+            android:checkable="false"/>
+
+    </group>
+</menu>

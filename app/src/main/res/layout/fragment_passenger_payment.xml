@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ExpandableListView
+        android:id="@+id/credit_expandablelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/promo_layout"
+        android:layout_marginLeft="@dimen/activity_margin_16"
+        android:layout_marginRight="@dimen/activity_margin_16"
+        android:childDivider="@color/listitem_bg"
+        android:groupIndicator="@null"
+        android:scrollbars="none" />
+    <!-- Add Promo Code Section -->
+    <LinearLayout
+        android:id="@+id/promo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin_16">
+
+        <TextView
+            android:id="@+id/promp_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:text="HAVE A PROMO CODE?"
+            android:textColor="@color/app_textcolor"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:id="@+id/promoCodeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/promp_code"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_margin_10"
+                android:layout_weight=".7"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/activity_margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_margin_5"
+                        android:text="ENTER CODE"
+                        android:textColor="@color/app_textcolor"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/login_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_margin_16"
+                        android:background="@android:color/transparent"
+                        android:hint="XX-XX-XX"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextLabel"
+                        android:textColor="@color/app_textcolor"
+                        android:textColorHint="@color/app_border"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/error_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_margin_5"
+                    android:text="Please enter correct email"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/activity_margin_5"
+                    android:layout_marginRight="@dimen/activity_margin_5"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:background="@color/green"></View>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/apply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableListCredit"
+                android:layout_weight=".3"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:padding="@dimen/activity_margin_10"
+                android:text="APPLY"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/promoCodeLayout"
+            android:layout_marginTop="@dimen/activity_margin_5"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_margin_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_margin_5"
+                android:text="DEZI CREDIT"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_16"
+                android:background="@android:color/transparent"
+                android:hint="$10.00"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textAppearance="@style/TextLabel"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Add Promo Code Section Ends here -->
+</RelativeLayout>

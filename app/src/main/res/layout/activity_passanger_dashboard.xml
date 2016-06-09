@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    android:fitsSystemWindows="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/dezi_logo_text"
+            android:padding="@dimen/activity_margin_16"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fitsSystemWindows="true">
+        <FrameLayout
+            android:id="@+id/fragmentHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#80000000"
+            android:fitsSystemWindows="true"
+            app:itemBackground="@null"
+            app:itemIconTint="@color/light_gray"
+            app:itemTextColor="@color/light_gray"
+            app:menu="@menu/passanger_menu" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

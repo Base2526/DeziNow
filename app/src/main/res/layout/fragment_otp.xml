@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:id="@+id/toolbar_layout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_big"
+                android:textColor="@color/white"
+                android:text="@string/dezi_now"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_margin_16"
+        android:fillViewport="true"
+        android:layout_below="@id/toolbar_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_margin_32"
+            android:paddingRight="@dimen/activity_margin_32">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_16"
+                android:gravity="center_horizontal"
+                android:text="PHONE VERIFICATION "
+                android:textStyle="bold"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_70"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_margin_5"
+                    android:text="@string/mobile"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/phone_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_16"
+                    android:background="@android:color/transparent"
+                    android:hint="xxx-xxx-xxxx"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextLabel"
+                    android:textColor="@color/app_textcolor"
+                    android:textColorHint="@color/app_border"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/error_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_margin_5"
+                    android:text="Please enter correct email"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:layout_marginRight="@dimen/activity_margin_5"
+                android:layout_marginTop="@dimen/activity_margin_10"
+                android:background="@color/green"></View>
+
+
+            <Button
+                android:id="@+id/btn_getotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_25"
+                android:background="@drawable/btn_selector"
+                android:text="@string/send_verification_code"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/text_size_big" />
+
+            <!--<TextView
+                android:id="@+id/resend_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_16"
+                android:text="@string/resend_otp"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size" />-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_25"
+                android:gravity="center_horizontal"
+                android:text="@string/enter_verification_code"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_5"
+                android:layout_marginLeft="@dimen/padding_70"
+                android:layout_marginRight="@dimen/padding_70"
+                android:orientation="horizontal"
+                android:weightSum="5.5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/otp_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="1"
+                        android:layout_marginLeft="@dimen/activity_margin_10"
+                        android:singleLine="true"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextLabel"
+                        android:textColor="@color/app_textcolor"
+                        android:textSize="@dimen/text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:background="@color/green"></View>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/otp_et1"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="1"
+                        android:enabled="false"
+
+                        android:singleLine="true"
+                        android:layout_marginLeft="@dimen/activity_margin_10"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextLabel"
+                        android:textColor="@color/app_textcolor"
+                        android:textSize="@dimen/text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:background="@color/green"></View>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/otp_et2"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionNext"
+                        android:layout_marginLeft="@dimen/activity_margin_10"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextLabel"
+                        android:textColor="@color/app_textcolor"
+                        android:textSize="@dimen/text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:background="@color/green"></View>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/otp_et3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="1"
+                        android:layout_marginLeft="@dimen/activity_margin_10"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:enabled="false"
+                        android:textAppearance="@style/TextLabel"
+                        android:textColor="@color/app_textcolor"
+                        android:textSize="@dimen/text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:background="@color/green"></View>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_32"
+                android:background="@drawable/btn_selector"
+                android:text="CONFIRM"
+
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_big" />
+        </LinearLayout>
+    </ScrollView>
+        </RelativeLayout>
+
+    <!-- Progress bar in center -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

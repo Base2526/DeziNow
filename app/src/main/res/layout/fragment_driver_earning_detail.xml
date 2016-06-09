@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~ *
+  ~ * * Copyright © 2016, Mobilyte Inc. and/or its affiliates. All rights reserved.
+  ~ * *
+  ~ * * Redistribution and use in source and binary forms, with or without
+  ~ * * modification, are permitted provided that the following conditions are met:
+  ~ * *
+  ~ * * - Redistributions of source code must retain the above copyright
+  ~ * *    notice, this list of conditions and the following disclaimer.
+  ~ * *
+  ~ * * - Redistributions in binary form must reproduce the above copyright
+  ~ * * notice, this list of conditions and the following disclaimer in the
+  ~ * * documentation and/or other materials provided with the distribution.
+  ~ *
+  ~ */
+  -->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/driver_Profile_bg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mapimage"
+             />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_margin_16"
+                android:paddingLeft="@dimen/activity_margin_16"
+                android:paddingRight="@dimen/activity_margin_16"
+                android:paddingTop="@dimen/activity_margin_16">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile"
+                        android:layout_width="@dimen/def_profile_small"
+                        android:layout_height="@dimen/def_profile_small"
+                        android:src="@drawable/icon_profile" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_margin_16"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ORDER NO:ABCD123456"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="John Doe"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_big" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_16"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/def_profile_small"
+                        android:layout_height="@dimen/def_profile_small"
+                        android:layout_gravity="center"
+                        android:src="@drawable/add_marker" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dgts__permissions_margin_bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pickup"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_margin_5"
+                            android:text="2687 Lexington Drive, Livemore"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CA 94550"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="12/09/2016, 12:30 am"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_10"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/def_profile_small"
+                        android:layout_height="@dimen/def_profile_small"
+                        android:layout_gravity="center"
+                        android:src="@drawable/destination_loction" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dgts__permissions_margin_bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Drop off"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_margin_5"
+                            android:text="9720 old york Road Garden Grove,"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CA 92840"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="12/09/2016, 01:12 am"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_32"
+                    android:layout_marginTop="@dimen/activity_margin_32"
+                    android:gravity="center_vertical"
+                    android:text="RECEIPT"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_big" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_32"
+
+
+                    android:layout_marginTop="@dimen/dgts__permissions_margin_bottom"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="16.62 MILES"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="14.96"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/text_size_big" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="28.23 MINUTES"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="4.23"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/text_size_big" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_16"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="@dimen/activity_margin_3"
+                            android:text="SUBTOTAL"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/activity_margin_3"
+                            android:text="29.19"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/text_size_big" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="@dimen/activity_margin_3"
+                            android:text="SERVICE FEE"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/activity_margin_3"
+                            android:text="3.20"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/text_size_big" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="@dimen/activity_margin_3"
+                            android:text="PICKUP FEE"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/activity_margin_3"
+                            android:text="4.00"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/text_size_big" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="@dimen/activity_margin_3"
+                            android:text="TOTAL"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/activity_margin_3"
+                            android:text="36.39"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_size_big" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_10"
+                    android:layout_marginTop="@dimen/activity_margin_32"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/visa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/activity_margin_10"
+                        android:text="PERSONAL **** 1234 "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="@dimen/activity_margin_16"
+                    android:layout_marginTop="@dimen/activity_margin_16"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/activity_margin_10"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/fare_estimate_bg"
+                        android:gravity="center"
+                        android:text="REPORT FOUND ITEM"
+                        android:textColor="@color/white" />
+
+                    <!--<View
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.10" />-->
+
+                    <TextView
+                        android:id="@+id/report_issue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_margin_10"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/contact_passenger_bg"
+                        android:gravity="center"
+                        android:text="REPORT AN ISSUE"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+
+    <!--    <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>-->

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Dezi</string>
+    <string name="action_share">Share</string>
+    <string name="action_toggle">Toggle Profile</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="navigation_drawer_open">open</string>
+
+    <string name="google_api_key">AIzaSyCJMw4diUxdMdiHFeWR7Js-v_qaM8Wz4hc</string>
+    <string name="google_server_key"></string>
+
+    <string name="facebook_app_id">484510668426529</string>
+    <string name="twitter_key">0EAf4fOMlWzytr6XkxWzNALgO</string>
+    <string name="twitter_secret">qDdfgkXzcZaFTm7Dg7knuSaIWWMifg57VXJ7OCCh16WSS6qZN5</string>
+
+    <string name="stripe_secret_key">sk_test_oR49bekJZjO1lwT9Y27zWTsC</string>
+    <string name="stripe_published_key">pk_test_QyuoY9iWrlj35SVmopTTPFLM</string>
+
+    <!-- Sharedprefrences String  -->
+    <string name="pref_userId">user_id</string>
+    <string name="pref_role">role</string>
+    <string name="pref_phone">phone</string>
+    <string name="pref_email">email</string>
+    <string name="pref_isdriver_requested">isDriverRequested</string>
+    <string name="pref_isdriver_approved">isDriverApproved</string>
+    <string name="pref_isdriver">isDriver</string>
+    <string name="pref_isdriverActive">isDriverActive</string>
+    <string name="pref_gcm_token">gcm_token</string>
+    <string name="pref_stripe_customer_id">stripe_customerID</string>
+
+    <string name="pref_driver_latitude">driver_latitude</string>
+    <string name="pref_driver_longitude">driver_longitude</string>
+
+    <!-- Error String -->
+    <string name="error_internet">Internet not working</string>
+    <string name="error_api">Server not Responding</string>
+    <string name="error_something">Something went wrong</string>
+    <string name="error_driver_location">Driver Position Not Found</string>
+
+    <!-- TItle -->
+    <string name="GPSAlertDialogTitle">Location Services Disabled</string>
+    <string name="GPSAlertDialogMessage">Please enable location services.</string>
+
+    <!-- Messages-->
+    <string name="message_sent_otp">OTP has already been sent</string>
+    <string name="message_request_otp">First request for OTP</string>
+
+    <!-- Validation Strings -->
+    <string name="validation_email_phone">Please enter Email/Phone</string>
+    <string name="validation_name">Please enter Name</string>
+    <string name="validation_email">Please enter Email</string>
+    <string name="validation_valid_email">Please enter valid Email</string>
+    <string name="validation_password">Please enter Password</string>
+    <string name="validation_phone">Please enter Phone</string>
+    <string name="validation_license">Please enter License Number</string>
+    <string name="validation_valid_phone">Please enter valid phone number</string>
+    <string name="validation_password_length">Password length should be greater than 4</string>
+    <string name="validation_confirm_password">Please confirm Password</string>
+    <string name="validation_match_password">Password do not match</string>
+    <string name="validation_otp">Please enter OTP</string>
+
+    <!-- Login Module String -->
+    <string name="register"><u>Register Now</u></string>
+    <string name="login"><u>Login Now</u></string>
+    <string name="dont_have_account">DON\'T HAVE AN ACCOUNT?  </string>
+    <string name="resend_otp"><u>RESEND OTP</u></string>
+    <string name="otp_message">An OTP has been sent to your registered phone number. Please enter it in the text box above</string>
+
+    <!-- Profile Module String -->
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="hint_dob">________/________/________</string>
+
+    <!--Alart Messages-->
+    <string name="alart_message">"NO DRIVER AVAILABLE IN THIS AREA PLEASE TRY AGAIN LATER "</string>
+
+
+    <!-- Driver Dashboard String-->
+    <string name="accept_pickup">TAP SCREEN TO ACCEPT REQUEST</string>
+    <string name="passenger_mode">Do you want to switch to Passanger Mode ?</string>
+    <string name="driver_mode">Do you want to switch to Driver Mode ?</string>
+    <string name="log_in">LOG IN</string>
+    <string name="continue_with_facebook">CONTINUE WITH FACEBOOK</string>
+    <string name="signup_now">SIGN UP NOW</string>
+    <string name="terms_conditions"><![CDATA[BY SIGNING UP,I AGREE TO THE TERMS & CONDITIONS]]></string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_have_an_account_login_here">ALREADY HAVE AN ACCOUNT? LOGIN HERE</string>
+    <string name="dezi_now">DEZI</string>
+    <string name="mobile">MOBILE</string>
+    <string name="send_verification_code">SEND VERIFICATION CODE</string>
+    <string name="enter_verification_code">ENTER VERIFICATION CODE</string>
+    <string name="resend_verification_code">RESEND VERIFICATION CODE</string>
+    <string name="action_setting">Setting</string>
+
+    <string-array name="def_carlist">
+        <item>Select Car</item>
+    </string-array>
+    <string-array name="def_paymentmode">
+        <item>Select Payment Mode</item>
+    </string-array>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/listitem_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin_10"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="PERSONAL"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/listItemValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        android:text="COMPLETED"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size" />
+</LinearLayout>
+

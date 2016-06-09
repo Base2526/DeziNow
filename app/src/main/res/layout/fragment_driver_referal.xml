@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_margin_16"
+    android:paddingRight="@dimen/activity_margin_16">
+
+    <ImageView
+        android:layout_width="@dimen/def_profile_border"
+        android:layout_height="@dimen/def_profile_border"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_32"
+        android:src="@drawable/bag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_16"
+        android:text="GIVE AND RECEIVE $ 10"
+        android:padding="@dimen/activity_margin_10"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_big" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_32"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_margin_10"
+        android:paddingRight="@dimen/activity_margin_10"
+        android:text="WHEN YOU REFER SOMEONE TO BECOME A PASSANGER, YOU WILL RECEIVE $10 CREDIT WHEN THEY COMPLETE THEIR FIRST RIDE"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_32"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/def_profile_ultra_small"
+                android:layout_height="@dimen/def_profile_ultra_small"
+                android:layout_gravity="center"
+                android:src="@drawable/mail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_margin_10"
+                android:paddingBottom="@dimen/activity_margin_10"
+                android:text="EMAIL"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/def_profile_ultra_small"
+                android:layout_height="@dimen/def_profile_ultra_small"
+                android:layout_gravity="center"
+                android:src="@drawable/text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_margin_10"
+                android:paddingBottom="@dimen/activity_margin_10"
+                android:text="TEXT"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/def_profile_ultra_small"
+                android:layout_height="@dimen/def_profile_ultra_small"
+                android:layout_gravity="center"
+                android:src="@drawable/twitter_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_margin_10"
+                android:paddingBottom="@dimen/activity_margin_10"
+                android:text="TWITTER"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/def_profile_ultra_small"
+                android:layout_height="@dimen/def_profile_ultra_small"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/facebook_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_margin_10"
+                android:paddingBottom="@dimen/activity_margin_10"
+                android:text="FACEBOOK"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

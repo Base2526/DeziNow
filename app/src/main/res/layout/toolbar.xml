@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/activity_margin_10"
+        android:paddingBottom="@dimen/activity_margin_16">
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dezi_logo_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="hgdfhjg"
+            android:id="@+id/title"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"  />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rewards_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/activity_margin_16"
+    android:paddingRight="@dimen/activity_margin_16"
+    >
+
+    <ExpandableListView
+        android:id="@+id/driver_expandableListRefferal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_marginBottom="@dimen/activity_margin_16"
+        android:groupIndicator="@null"
+        android:dividerHeight="0dp"
+        android:childDivider="@color/listitem_bg"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/listitem_bg"
+        android:padding="@dimen/activity_margin_10"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textColor="@color/white"
+                    android:text="REFFERAL BONUS FOR 2016"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/reward_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="$ 50"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_big"
+                    android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

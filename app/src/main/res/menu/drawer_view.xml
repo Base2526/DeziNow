@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="HOME"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/nav_profile"
+            android:title="PROFILE"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_earnings"
+            android:icon="@drawable/nav_earning"
+            android:title="EARNINGS"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/nav_payment"
+            android:title="PAYMENTS"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/nav_report"
+            android:title="REPORT AN ISSUE"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_refer_driver"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="REFER A DRIVER"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_rewards"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="REWARDS"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="FAQS"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/nav_passenger_mode"
+            android:icon="@drawable/nav_driver_mode"
+            android:title="PASSENGER MODE"
+            android:checkable="false"/>
+    </group>
+
+    <!--<item
+        android:title="">
+        <menu>
+            <item
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="About" />
+
+        </menu>
+    </item>-->
+
+</menu>

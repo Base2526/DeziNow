@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222720</color>
+    <color name="colorPrimaryDark">#222720</color>
+    <color name="colorAccent">#93d60a</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="windowBackground">#f3f3f5</color>
+
+    <color name="edittext_bg">#d2d2d2</color>
+
+    <color name="toolbar_color">#222720</color>
+    <color name="navbar_color">#0a091c</color>
+
+    <color name="app_textcolor_heading">#444444</color>
+    <color name="app_textcolor">#232323</color>
+    <color name="app_hintcolor">#3e3e3e</color>
+    <color name="light_transpirant_black">#79666565</color>
+    <color name="app_border">#9b9a9a</color>
+    <color name="sky_blue">#1bb4fa</color>
+    <color name="layout_background">#3f443d</color>
+
+    <color name="facebook_bg">#3c5dac</color>
+    <color name="btn_bg">#3c433c</color>
+    <color name="btn_bg_dark">#343934</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="dark_gray">#818080</color>
+    <color name="red">#d73f3f</color>
+    <color name="green">#93d60a</color>
+    <color name="transparent">#00fafafa</color>
+    <color name="green_dark">#8abe1f</color>
+    <color name="light_blue">#86cbda</color>
+
+    <color name="intro_bg">#00bcd4</color>
+    <color name="switchmode_bg">#17bae3</color>
+
+    <color name="listitem_bg">#3d423c</color>
+    <color name="listitem_highlighted">#333834</color>
+
+    <!-- circular progressbar -->
+    <color name="circular_progress_default_progress">#bada55</color>
+    <color name="circular_progress_default_background">#787878</color>
+    <color name="circular_progress_default_title">#3e3e3e</color>
+    <color name="circular_progress_default_subtitle">#3e3e3e</color>
+</resources>

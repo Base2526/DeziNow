@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="@color/windowBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/searchbar_bg"
+            android:layout_marginLeft="@dimen/activity_margin_10"
+            android:layout_marginRight="@dimen/activity_margin_10"
+            android:layout_marginTop="@dimen/activity_margin_10">
+            <EditText
+                android:id="@+id/search_country_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_margin_5"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:hint="Search Country"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_action_search"
+                android:drawablePadding="@dimen/activity_margin_10"/>
+        </LinearLayout>
+        <!-- Recycler view to show list of countries -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_country"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/windowBackground"
+            />
+    </LinearLayout>
+</LinearLayout>

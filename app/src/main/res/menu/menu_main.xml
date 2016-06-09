@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="@string/action_share"
+        android:visible="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_share"/>
+    <item
+        android:id="@+id/action_toggle"
+        android:orderInCategory="100"
+        android:title="@string/action_toggle"
+        app:showAsAction="always"
+        android:visible="true"
+        app:icon="@drawable/toggle_green"/>
+</menu>

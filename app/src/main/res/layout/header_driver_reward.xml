@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/header_driver_rewards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_32"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_margin_16"
+            android:paddingRight="@dimen/activity_margin_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_margin_5"
+                    android:text="TIER LEVEL"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reward_tier_level"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="LEVEL 2 (1-3)"
+                    android:textColor="@color/app_border"
+                    android:textSize="@dimen/text_size"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:layout_marginRight="@dimen/activity_margin_5"
+                android:layout_marginTop="@dimen/activity_margin_5"
+                android:background="@color/green"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_16"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_margin_16"
+            android:paddingRight="@dimen/activity_margin_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_margin_5"
+                    android:text="HOUR"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reward_hour"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="38.6 HR"
+                    android:textColor="@color/app_border"
+                    android:textSize="@dimen/text_size"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:layout_marginRight="@dimen/activity_margin_5"
+                android:layout_marginTop="@dimen/activity_margin_5"
+                android:background="@color/green"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_16"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_margin_16"
+            android:paddingRight="@dimen/activity_margin_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_margin_5"
+                    android:text="ACCEPTANCE RATE"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reward_acceptance_rate"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="93.2%"
+                    android:textColor="@color/app_border"
+                    android:textSize="@dimen/text_size"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:layout_marginRight="@dimen/activity_margin_5"
+                android:layout_marginTop="@dimen/activity_margin_5"
+                android:background="@color/green"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_16"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_margin_16"
+            android:paddingRight="@dimen/activity_margin_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_margin_5"
+                    android:text="CANCELLATION RATE"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reward_cancellation_rate"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="95.2%"
+                    android:textColor="@color/app_border"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:layout_marginRight="@dimen/activity_margin_5"
+                android:layout_marginTop="@dimen/activity_margin_5"
+                android:background="@color/green"></View>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_16"
+            android:gravity="right"
+            android:text="TIER LEVEL DETAIL"
+            android:textColor="@color/app_border"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+</LinearLayout>

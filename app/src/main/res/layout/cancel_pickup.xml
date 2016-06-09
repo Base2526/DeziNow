@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~ *
+  ~ * * Copyright © 2016, Mobilyte Inc. and/or its affiliates. All rights reserved.
+  ~ * *
+  ~ * * Redistribution and use in source and binary forms, with or without
+  ~ * * modification, are permitted provided that the following conditions are met:
+  ~ * *
+  ~ * * - Redistributions of source code must retain the above copyright
+  ~ * *    notice, this list of conditions and the following disclaimer.
+  ~ * *
+  ~ * * - Redistributions in binary form must reproduce the above copyright
+  ~ * * notice, this list of conditions and the following disclaimer in the
+  ~ * * documentation and/or other materials provided with the distribution.
+  ~ *
+  ~ */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="YOU HAVE CHOSEN TO CANCEL YOUR PICKUP. PLEASE LET US KNOW WHY:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="ISSUE (CATEGORY)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:text="ISSUE WITH THE CAR"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/activity_margin_10"
+                    android:src="@drawable/ic_keyboard_down" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="SUB ISSUE (SUBCATEGORY)"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:text="ISSUE WITH PASSANGER"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/activity_margin_10"
+                    android:src="@drawable/ic_keyboard_down" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="MESSAGE (OPTIONAL)"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="SUBMIT"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="CANCELLATION NOT CONFIRMED UNTIL REASON IS SUBMITTED"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

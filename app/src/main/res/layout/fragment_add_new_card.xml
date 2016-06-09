@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_margin_16"
+    android:paddingRight="@dimen/activity_margin_16">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_32"
+        android:gravity="center"
+        android:text="ADD NEW CARD"
+        android:layout_marginBottom="@dimen/activity_margin_10"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_heading"
+ />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_32"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_margin_5"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARD NUMBER"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size"
+            />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_16"
+                android:background="@android:color/transparent"
+                android:hint="XXX-XXXX-XXXXXX"
+                android:textColor="@color/app_textcolor"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:textColorHint="@color/tw__composer_deep_gray"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/activity_margin_5"
+            android:layout_marginTop="@dimen/activity_margin_5"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_margin_5"
+
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXPIRATION DATE"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_16"
+                android:background="@android:color/transparent"
+                android:hint="MONTH/YEAR"
+android:textColor="@color/app_textcolor"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:textColorHint="@color/tw__composer_deep_gray"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/activity_margin_5"
+            android:layout_marginTop="@dimen/activity_margin_5"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_margin_5"
+
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECURITY CODE"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_16"
+                android:background="@android:color/transparent"
+                android:hint="XXX"
+                android:textColor="@color/app_textcolor"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:textColorHint="@color/tw__composer_deep_gray"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/activity_margin_5"
+            android:layout_marginTop="@dimen/activity_margin_5"
+            android:background="@color/green" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/activity_margin_16"
+        android:layout_marginTop="@dimen/activity_margin_32"
+        android:text="- OR -"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_big"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+    >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/def_profile_ultra_small"
+                android:layout_height="@dimen/def_profile_ultra_small"
+                android:layout_gravity="center"
+                android:padding="@dimen/activity_margin_5"
+                android:src="@drawable/icon_paypal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_margin_5"
+            android:gravity="center"
+            android:text="PAYPAL"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+   />
+    </LinearLayout>
+
+</LinearLayout>

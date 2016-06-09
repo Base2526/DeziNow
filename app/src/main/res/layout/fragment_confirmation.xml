@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+
+        <ImageView
+            android:id="@+id/mylocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/confirm_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/activity_margin_5"
+            android:layout_marginRight="@dimen/activity_margin_16"
+            android:src="@drawable/mylocation" />
+
+
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/add_marker" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirm_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_margin_16"
+            android:layout_marginLeft="@dimen/activity_margin_16"
+            android:layout_marginRight="@dimen/activity_margin_16"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/activity_margin_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_margin_16"
+                        android:layout_marginRight="@dimen/activity_margin_16"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/shape_circle_white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/car" />
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/cars_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_margin_16"></Spinner>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/def_size_modes"
+                        android:layout_marginLeft="@dimen/activity_margin_16"
+                        android:layout_marginRight="@dimen/activity_margin_16"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/currency"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/visa" />
+
+                        <Spinner
+                            android:id="@+id/payment_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/activity_margin_16"
+                            android:layout_toRightOf="@+id/currency"></Spinner>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_margin_16"
+                        android:layout_marginRight="@dimen/activity_margin_16"
+                        android:layout_marginTop="@dimen/activity_margin_16"
+                        android:orientation="horizontal"
+                        android:weightSum="1.02">
+
+                        <LinearLayout
+                            android:id="@+id/fare_estimate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight=".5"
+                            android:background="@drawable/fare_estimate_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/activity_margin_10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="FARE ESTIMATE"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_small"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".02" />
+
+                        <LinearLayout
+                            android:id="@+id/cancel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight=".5"
+                            android:background="@drawable/cancel_btn_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/activity_margin_10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="CANCEL"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_small"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/confirm_ride"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_margin_10"
+                        android:layout_marginLeft="@dimen/activity_margin_16"
+                        android:layout_marginRight="@dimen/activity_margin_16"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:background="@drawable/login_btn_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_margin_10"
+                        android:text="CONFIRM"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Pick up and Destination layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_16"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/pickup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/searchbar_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/pickup_adressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/shape_green_dot"
+                android:drawablePadding="@dimen/activity_margin_32"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Pickup location"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/destination_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:background="@drawable/btn_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+>
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_margin_16"
+                android:paddingRight="@dimen/activity_margin_16"
+                android:padding="@dimen/activity_margin_5">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_5"
+                    android:src="@drawable/ic_back" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/destination_adressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_margin_16"
+                android:drawableLeft="@drawable/shape_green_dot"
+                android:drawablePadding="@dimen/activity_margin_16"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="DESTINATION"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

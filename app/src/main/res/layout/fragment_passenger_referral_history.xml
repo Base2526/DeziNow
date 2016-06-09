@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_margin_16"
+    android:layout_marginRight="@dimen/activity_margin_16"
+    android:paddingBottom="@dimen/activity_margin_16"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <ExpandableListView
+        android:id="@+id/passenger_refereal_expandableList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_margin_10"
+        android:layout_above="@+id/bottom_layout"
+        android:childDivider="@color/listitem_bg"
+        android:groupIndicator="@null"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/activity_margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_5"
+            android:gravity="center"
+            android:text="REFERRAL BONUS FOR 2016"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/earning_green"
+            android:gravity="center"
+            android:text="50.00"
+            android:paddingTop="@dimen/activity_margin_5"
+            android:textColor="@color/green"
+            android:textSize="@dimen/activity_margin_32" />
+    </LinearLayout>
+</RelativeLayout>
